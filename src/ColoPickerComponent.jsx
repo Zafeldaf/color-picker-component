@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {
     AppProvider,
-    Button,
     Popover,
     ColorPicker,
     TextField,
@@ -17,7 +16,6 @@ const ColorPickerComponent = () => {
         hue: 300,
         brightness: 1,
         saturation: 0.7,
-        alpha: 0.8,
     });
 
     const [popoverActive, setPopoverActive] = useState(false);
@@ -52,7 +50,17 @@ const ColorPickerComponent = () => {
     };
 
     const activator = (
-        <Button onClick={handlePopoverOpen}>
+        <button
+            onClick={handlePopoverOpen}
+            style={{
+                background: "none",
+                color: "none",
+                padding: "0",
+                font: "none",
+                outline: "none",
+                border: "none",
+            }}
+        >
             <div
                 style={{
                     height: "2rem",
@@ -61,8 +69,7 @@ const ColorPickerComponent = () => {
                     background: hexColor,
                 }}
             />
-            <span>Primary color</span>
-        </Button>
+        </button>
     );
 
     return (
@@ -73,11 +80,7 @@ const ColorPickerComponent = () => {
                 onClose={handlePopoverClose}
             >
                 <Popover.Section>
-                    <ColorPicker
-                        onChange={handleColorChange}
-                        color={color}
-                        allowAlpha
-                    />
+                    <ColorPicker onChange={handleColorChange} color={color} />
                 </Popover.Section>
                 <Popover.Section>
                     <TextField value={hexColor} onChange={handleHexChange} />

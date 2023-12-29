@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Color Picker Component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple color picker component based on the Polaris color picker and changed as the Polaris one doesn't provide all the functionality needed.
 
-## Available Scripts
+## Run
 
-In the project directory, you can run:
+### Requirements
 
-### `npm start`
+If you clone this repo and run this locally on your machine you need to run `npm i` or `yarn`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+If you copy the `ColorPickerComponent.jsx` file in your existing project, you need to make sure the following packages is downloaded.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```js
+@shopify/javascript-utilities
+@shopify/polaris
+```
 
-### `npm test`
+At the time of creating this project I am on the following versions.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```js
+"@shopify/javascript-utilities": "^2.4.1",
+"@shopify/polaris": "^12.6.0"
+```
 
-### `npm run build`
+You can download them like this:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```js
+npm i @shopify/javascript-utilities @shopify/polaris
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+OR
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```js
+yarn add @shopify/javascript-utilities @shopify/polaris
+```
 
-### `npm run eject`
+### Dev
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Since this was created using the bootstrap `create-react-app` it will run on [http://localhost:3000](http://localhost:3000) when `npm start` is ran.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Like normal it will any changes made will be available after a reload in the browser.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Build
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+I believe the file `ColoPickerComponent.jsx` should be placed in your project, therefore there is no need for a build script. For testing purposes the dev script was made.
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Simply call the `<ColorPickerComponent />` wherever needed and it will appear, but be sure to have the `ColoPickerComponent.jsx` file in the directory and the file has been imported.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Currently the color picker is made for my purpose and usage, many people will have different requirements so the file `ColoPickerComponent.jsx` can be changed at any time to make it to your liking.
 
-### Code Splitting
+## Future
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+In the future I might make a `npm` and `yarn` package out of this, but that is still too far away. This is just a side project and something I needed for my main project. The chances for this to be turned into a package are too low at the moment.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If I ever plan to publish as a package, I would need to of course add more features and make this into a proper package.

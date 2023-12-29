@@ -1,5 +1,5 @@
 import React from "react";
-import ColorPickerComponent from "./ColorPicker.jsx";
+import ColorPickerComponent from "./ColoPickerComponent.jsx";
 
 export default function App() {
     return (
