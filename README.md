@@ -2,6 +2,10 @@
 
 A simple color picker component based on the Polaris color picker and changed as the Polaris one doesn't provide all the functionality needed.
 
+## Important
+
+If you take the `ColorPickerComponent.jsx` file put it in your Shopify project and call the component. Remember to REMOVE the `<AppProvider></AppProvider>` tags in the `ColorPickerComponent.jsx`
+
 ## Run
 
 ### Requirements
@@ -36,7 +40,7 @@ yarn add @shopify/javascript-utilities @shopify/polaris
 
 ### Dev
 
-Since this was created using the bootstrap `create-react-app` it will run on [http://localhost:3000](http://localhost:3000) when `npm start` is ran.
+Since this was created using the bootstrap `create-react-app` it will run on [http://localhost:3000](http://localhost:3000) when `npm start` is used the project will run.
 
 Like normal any changes made will be available after a reload in the browser.
 
